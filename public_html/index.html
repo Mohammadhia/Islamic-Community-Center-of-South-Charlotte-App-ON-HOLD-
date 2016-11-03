@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ICC South Charlotte</title>
+        <meta charset="UTF-8">
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+        
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="JQuery Mobile Library/jquery.mobile-1.4.5.min.css">
+        <!--
+        <script type="text/javascript" src="cordova.js"></script>
+        -->
+        <!-- Include the jQuery library -->
+        <script src="JQuery Library/jquery-1.11.3.min.js"></script>
+        
+        
+        <script>
+            $(document).bind('mobileinit', function(){
+                $.mobile.changePage.defaults.changeHash = false;
+                $.mobile.hashListeningEnabled = false;
+                $.mobile.pushStateEnabled = false;
+            });
+        </script>
+        
+        <!-- Include the jQuery Mobile library -->
+        <script src="JQuery Mobile Library/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!-- Include javascript file -->
+        <script src="functionality.js"></script>
+        <!-- Include javascript file for parsing JSON -->
+        <script src="JSONparser.js"></script>
+        <!-- Include javascript file for parsing Google Calendar JSON -->
+        <script src="CalendarJSONparser.js"></script>
+        
+        
+        <!-- Include CSS file for extra styling -->
+        <link href="style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <script>
+            $(function () {
+                $("div[data-role='panel']").panel().enhanceWithin();
+                calendarParser();
+                mainParser();
+                main();
+            });
+        </script>
+        
+        <div data-role="panel" data-theme="b" id="slideOutMenu" data-display="overlay" data-position-fixed="true" data-dismissible="true">
+            <ul>
+                <li><a href="#homepage" class="firstMenuItem" data-rel="close">Home</a></li>
+                <li><a href="#announcementsPage" data-rel="close">All Announcements</a></li>
+                <li><a href="#eventsPage" data-rel="close">Upcoming Events</a></li>
+                <li><a href="#settingsPage" data-rel="close">Settings</a></li>
+                <li><a href="#aboutICCSCPage" data-rel="close">About ICCSC</a></li>
+            </ul>
+        </div>
+        
+        
+        
+        <div data-role="page" id="homepage">
+            
+            <div data-role="header" data-theme="b">
+                <div id="menu-items">
+                    <a href="#slideOutMenu"><img id="menu-button" src="DownloadedImages/mobile-menu.png"/></a>
+                    ICC South Charlotte
+                </div>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <!--<div class="header">
+                    <h1>
+                        ICC South Charlotte
+                    </h1>
+                </div>-->
+                <div class="RestOfHomePage">
+                    <div class="announcements-card">
+                        <div class="announcements-header">
+                            Announcements
+                        </div>
+                        
+                        <div class="announcements-slideshow">
+                                
+                            <div class="slide active-slide" id="slideone">
+                                <p class="fullAnnouncements-Header"><b>Test Title</b></p>
+                                <p class="fullAnnouncements-Content">Test Content</p>
+                            </div>
+                            <div class="slide" id="slidetwo">
+                                <p class="fullAnnouncements-Header"><b>Test Title2</b></p>
+                                <p class="fullAnnouncements-Content">Test Content2</p>
+                            </div>
+                            <div class="slide" id="slidethree">
+                                <p class="fullAnnouncements-Header"><b>Test Title3</b></p>
+                                <p class="fullAnnouncements-Content">Test Content3</p>
+                            </div>
+                            <div class="slide" id="slidefour">
+                                <p class="fullAnnouncements-Header"><b>test Title4</b></p>
+                                <p class="fullAnnouncements-Content">Test Content4</p>
+                            </div>
+
+                        </div>
+                        
+                        <div class="announcements-slider-circles">
+                            <ul class="slider-dots">
+                                <li class="dot active-dot">&bull;</li>
+                                <li class="dot">&bull;</li>
+                                <li class="dot">&bull;</li>
+                                <li class="dot">&bull;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div data-role="page" id="announcementsPage">
+            <div data-role="header" data-theme="b">
+                <div id="menu-items">
+                    <a href="#slideOutMenu"><img id="menu-button" src="DownloadedImages/mobile-menu.png"/></a>
+                    ICC South Charlotte
+                </div>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="fullAnnouncements" id="announcementCard1">
+                    Test1
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard2">
+                    Test2
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard3">
+                    Test3
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard4">
+                    Test4
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard5">
+                    Test5
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard6">
+                    Test6
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard7">
+                    Test7
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard8">
+                    Test8
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard9">
+                    Test9
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+                <div class="fullAnnouncements" id="announcementCard10">
+                    Test10
+                    <p class="fullAnnouncements-Header"><b></b></p>
+                    <p class="fullAnnouncements-Content"></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div data-role="page" id="eventsPage">
+            <div data-role="header" data-theme="b">
+                <div id="menu-items">
+                    <a href="#slideOutMenu"><img id="menu-button" src="DownloadedImages/mobile-menu.png"/></a>
+                    ICC South Charlotte
+                </div>                
+            </div>
+            <div data-role="main" class="ui-content" data-theme="b">
+                <select name="month" id="month" data-native-menu="false" data-theme="b">
+                    <option value="currentMonth0Data" id="currentMonth0"></option>
+                    <option value="currentMonth1Data" id="currentMonth1"></option>
+                    <option value="currentMonth2Data" id="currentMonth2"></option>
+                    <option value="currentMonth3Data" id="currentMonth3"></option>
+                    <option value="currentMonth4Data" id="currentMonth4"></option>
+                </select>
+                
+                <div id="currentMonth0Data" class="monthDataGroup">
+                    Month1
+                </div>
+                
+                <div id="currentMonth1Data" class="monthDataGroup">
+                    Month2
+                </div>
+                
+                <div id="currentMonth2Data" class="monthDataGroup">
+                    Month3
+                </div>
+                
+                <div id="currentMonth3Data" class="monthDataGroup">
+                    Month4
+                </div>
+                
+                <div id="currentMonth4Data" class="monthDataGroup">
+                    Month5
+                </div>
+            </div>    
+        </div>
+        
+        
+        
+        <div data-role="page" id="settingsPage">
+            <div data-role="header" data-theme="b">
+                <div id="menu-items">
+                    <a href="#slideOutMenu"><img id="menu-button" src="DownloadedImages/mobile-menu.png"/></a>
+                    ICC South Charlotte
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div data-role="page" id="aboutICCSCPage">
+            <div data-role="header" data-theme="b">
+                <div id="menu-items">
+                    <a href="#slideOutMenu"><img id="menu-button" src="DownloadedImages/mobile-menu.png"/></a>
+                    ICC South Charlotte
+                </div>
+            </div>
+        </div>
+    
+        
+    </body>
+</html>

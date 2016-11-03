@@ -1,0 +1,261 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 6, 2016, 11:11:37 AM
+    Author     : Mohammadhia
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin: 0;
+}
+
+
+#homepage {
+    background-image: url(DownloadedImages/3DMasjid.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-page {
+    padding: 0 !important;
+}
+
+#homepage .ui-content {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+}
+
+.ui-header {
+    padding: 0 !important;
+    height: 6.5%;
+    
+}
+
+.ui-content {
+    padding: 0 !important;
+}
+
+#homepage .ui-content .RestOfHomePage{
+    background-image: url(DownloadedImages/Caligraphy-Background.jpg);
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 55%;
+}
+
+.ui-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0 !important;
+    position: relative;
+    /*font-family: Georgia;
+    color: #0099ff;*/
+    text-shadow: 1px 1px #336699;
+    font-size: 6vw;
+    vertical-align: middle;
+}
+
+.ui-header img {
+    height: auto;
+    width: auto;
+    max-height: 9%;
+    max-width: 9%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 11%;
+    position: relative;
+}
+
+
+
+
+.announcements-card {
+    width: 90%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin-right:auto;
+    margin-left:auto;
+    top: 15%;
+}
+
+.announcements-header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 1%;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.announcements-slideshow {
+    margin: 0;
+    padding: 0;
+    font-size: 12vw;
+}
+
+.announcements-slideshow #slideone {
+    background: white;
+}
+
+.announcements-slideshow #slidetwo {
+    background: white;
+}
+
+.announcements-slideshow #slidethree {
+    background: white;
+}
+
+.announcements-slideshow #slidefour {
+    background: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.announcements-slider-circles {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9);
+    font-size: 2vw;
+}
+
+
+.fullAnnouncements {
+    width: 90%;
+    background: white;
+    margin-top: 3%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+.fullAnnouncements-Header {
+    margin: 0;
+    font-size: 5vw;
+}
+
+.fullAnnouncements-Content {
+    margin: 0;
+    font-size: 4vw;
+}
+
+
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #1aa3ff/*#363636*/;
+  text-shadow: 0px 0px 2px #ffffff, 0px 0px 4px #4db9ff, 0px 0px 6px #008ae6, 0px 0px 8px #007acc; 
+}
+
+
+
+
+
+
+.ui-panel {
+    width: 55%;
+}
+.ui-panel-inner {
+    padding: 0 !important;
+}
+.ui-panel ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.ui-panel li {
+    width: 100%;
+    font-size: 4.5vw;
+}
+.ui-panel li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+}
+.ui-panel li a:hover {
+    color: white;
+    background-color: #1aa3ff;
+}
+.ui-panel li a .firstMenuItem {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#announcementsPage {
+    background-image: url(DownloadedImages/Caligraphy-Background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+#eventsPage {
+    background-image: url(DownloadedImages/Caligraphy-Background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#settingsPage {
+    background-image: url(DownloadedImages/Caligraphy-Background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+#aboutICCSCPage {
+    background-image: url(DownloadedImages/Caligraphy-Background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
