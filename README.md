@@ -1,2 +1,2 @@
-# Islamic-Community-Center-of-South-Charlotte-App-ON-HOLD-
+# Islamic-Community-Center-of-South-Charlotte-App-ON-HOLD
 An app that shows recent announcements and upcoming events by the community center to keep the community updated. Uses JSON to extract information from the community center's website, and JavaScript, HTML, CSS, JQuery & JQuery Mobile for the app itself. PhoneGap to be used to make it into a mobile app once completed. On hold until JSON data for announcements is fixed. Implementation of notifications for announcements should take place as soon as it's fixed. JavaScript file for parsing announcement JSON data is not included because of sensitive username and password information in it.
